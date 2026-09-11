@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/*
+!.vscode/settings.json
+
+# Data is committed on purpose (public domain), so data/ is NOT ignored.
+# If you ever switch to a restricted dataset, uncomment the next two lines
+# and commit only a small sample plus the source link.
+# data/*.csv
+# !data/sample.csv
+
+git rm --cached .DS_Store
+git commit -m "Initial commit"
+git add -A
+time git status
+rm -f .git/index.lock
+pwd
+git status
+git count-objects -vH
+git add -A
+git commit -m "Initial commit"
